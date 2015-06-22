@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android_expandablelist.MainActivity" >
+
+    <include
+        android:id="@+id/main_head"
+        layout="@layout/head_logo" />
+
+    <include
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/mian_bottom" />
+
+    <TextView android:id="@+id/main_overview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OverView"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.openstack.MainActivity" >
+
+    <ImageView
+        android:id="@+id/login_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_weight="2"
+        android:src="@drawable/login_logo" />
+
+    <RelativeLayout
+        android:id="@+id/login_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_logo_iv"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/login_log_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Log In"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login_upboard_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/login_log_tv"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_boarder" />
+
+        <TextView
+            android:id="@+id/login_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_upboard_iv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="User Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/login_username_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_username_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_editbg"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/login_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_username_ed"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/login_password_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_editbg"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/login_downboarder"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/login_password_ed"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_boarder" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login_downboarder"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_button"
+            android:text="Sign In"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
